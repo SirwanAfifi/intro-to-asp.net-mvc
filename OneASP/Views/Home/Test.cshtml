@@ -1,0 +1,14 @@
+﻿@model List<OneASP.Models.Book>
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Today is: @ViewData["date"]</h2>
+
+@foreach (var item in Model)
+{
+    <p>@item.Title</p>
+    <p>@item.Author</p>
+    <p>@item.Description</p>
+    <p>@item.ReleasedDate</p>
+}
